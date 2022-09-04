@@ -13,10 +13,12 @@ public class Target : MonoBehaviour
     
     private Animator animator;
     private NavMeshAgent agent;
+    private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
-        followSpot = transform.position; 
+        followSpot = transform.position;
+        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
@@ -34,6 +36,7 @@ public class Target : MonoBehaviour
        
         //AdjustPerspective();
         UpdateAnimation();
+        AdjustSortingLayer();
     }
 
     private void UpdateAnimation()
@@ -66,7 +69,7 @@ public class Target : MonoBehaviour
 
     private void AdjustSortingLayer()
     {
-
+        spriteRenderer.sortingOrder = (int)(transform.position.y * -32);
     }
 
 }

@@ -311,7 +311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428740950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 0}
+  m_LocalPosition: {x: -0.07, y: -2.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -360,10 +360,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.774573, y: -1.7846725}
-      - {x: -1.07101, y: -2.281209}
-      - {x: 0.59786487, y: -2.2871315}
-      - {x: 0.87853, y: -1.8058401}
+    - - {x: -0.4900354, y: 0.112488985}
+      - {x: -0.6859259, y: -0.043928385}
+      - {x: -0.81742394, y: -0.29581404}
+      - {x: -0.8541599, y: -0.5085571}
+      - {x: -0.8061268, y: -0.70204175}
+      - {x: -0.55058867, y: -0.7162864}
+      - {x: 0.60636747, y: -0.72875416}
+      - {x: 0.86699986, y: 0.044353962}
 --- !u!483693784 &428740954
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -826,6 +830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1543975056}
   - component: {fileID: 1543975057}
+  - component: {fileID: 1543975058}
   m_Layer: 0
   m_Name: Pc
   m_TagString: Untagged
@@ -840,9 +845,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543975055}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1137687, y: -1.4657317, z: 0}
-  m_LocalScale: {x: 0.6264738, y: 0.5866443, z: 0.8851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 428740951}
@@ -900,6 +905,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1543975058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543975055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c2b0c1503c9eb449f82dc5d81a5edc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1890005277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,7 +1240,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.19
   m_Speed: 3
-  m_Acceleration: 8
+  m_Acceleration: 100
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
