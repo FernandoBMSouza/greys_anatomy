@@ -30,14 +30,23 @@ public class Target : MonoBehaviour
     private void UpdateAnimation()
     {
         float distance = Vector2.Distance(transform.position, followSpot);
-        if (Vector2.Distance(stuckDistanceCheck, transform.position) == 0) { animator.SetFloat("distance", 0f); return; }
+
+        /*
+        if (Vector2.Distance(stuckDistanceCheck, transform.position) == 0) 
+        { 
+            animator.SetFloat("distance", 0f); 
+            return; 
+        }
+        */
+
         animator.SetFloat("distance", distance);
+
         if(distance > 0.01)
         {
             Vector3 direction = transform.position - new Vector3(followSpot.x, followSpot.y, transform.position.y);
             float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
             animator.SetFloat("angle", angle);
-            stuckDistanceCheck = transform.position;
+            //stuckDistanceCheck = transform.position;
         }
     }
 

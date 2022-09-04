@@ -326,7 +326,7 @@ Animator:
   m_GameObject: {fileID: 2021483498}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d429f2d819bdd7143bae0352a6ed9dd6, type: 2}
+  m_Controller: {fileID: 9100000, guid: bd90e715d83ad074785ee06adb31d9cb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -349,8 +349,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
-  perspectiveScale: 0.5
-  scaleRatio: 1
 --- !u!61 &2021483505
 BoxCollider2D:
   m_ObjectHideFlags: 0
