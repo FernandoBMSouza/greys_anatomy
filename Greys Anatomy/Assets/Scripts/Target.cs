@@ -8,7 +8,6 @@ public class Target : MonoBehaviour
     private Vector2 followSpot;
     private Vector2 stuckDistanceCheck;
 
-    [SerializeField] private float movementSpeed = 5f;
     [SerializeField] private float perspectiveScale = 1f, scaleRatio = 1.5f;
     
     private Animator animator;

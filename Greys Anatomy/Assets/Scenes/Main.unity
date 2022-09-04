@@ -615,7 +615,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -831,6 +831,7 @@ GameObject:
   - component: {fileID: 1543975056}
   - component: {fileID: 1543975057}
   - component: {fileID: 1543975058}
+  - component: {fileID: 1543975059}
   m_Layer: 0
   m_Name: Pc
   m_TagString: Untagged
@@ -917,6 +918,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c2b0c1503c9eb449f82dc5d81a5edc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1543975059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543975055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015e0c45c60257e47821e639ccec4b5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popUpBox: {fileID: 0}
+  popUpText: {fileID: 0}
 --- !u!1 &1890005277
 GameObject:
   m_ObjectHideFlags: 0
